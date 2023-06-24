@@ -33,9 +33,9 @@ class _halaman1State extends State<halaman1> {
                 currentindex = value;
               }),
           items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: "Home"),
-            BottomNavigationBarItem(icon: Icon(Icons.search), label: "Search"),
-            BottomNavigationBarItem(icon: Icon(Icons.book), label: "Bookmark"),
+            BottomNavigationBarItem(icon: Icon(Icons.home), label: ""),
+            BottomNavigationBarItem(icon: Icon(Icons.search), label: ""),
+            BottomNavigationBarItem(icon: Icon(Icons.book), label: ""),
             BottomNavigationBarItem(
                 icon: Icon(Icons.settings), label: "Settings"),
           ]),
