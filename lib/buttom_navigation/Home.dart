@@ -13,21 +13,116 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-          child: Column(
-        children: [
-          Container(
-            margin: const EdgeInsets.only(left: 16, right: 16, top: 16),
-            child: Container(
-              width: 109,
-              height: 166,
-              decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.all(Radius.circular(25)),
-                  color: Colors.black),
-            ),
-          ),
-        ],
-      )),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
+                children: [
+                  Container(
+                    width: 109,
+                    height: 166,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage("assets/images/Sports.png"),
+                            fit: BoxFit.cover),
+                        borderRadius: BorderRadius.circular(25),
+                        color: Colors.white),
+                    child: Align(
+                      alignment: Alignment.bottomLeft,
+                      child: Padding(
+                        padding: EdgeInsets.all(10),
+                        child: Text(
+                          'Sports',
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 109,
+                    height: 166,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage("assets/images/Arts.png"),
+                            fit: BoxFit.cover),
+                        borderRadius: BorderRadius.circular(25),
+                        color: Colors.white),
+                    child: Align(
+                      alignment: Alignment.bottomLeft,
+                      child: Padding(
+                        padding: EdgeInsets.all(10),
+                        child: Text(
+                          'Arts',
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 109,
+                    height: 166,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage("assets/images/Economics.png"),
+                            fit: BoxFit.cover),
+                        borderRadius: BorderRadius.circular(25),
+                        color: Colors.white),
+                    child: Align(
+                      alignment: Alignment.bottomLeft,
+                      child: Padding(
+                        padding: EdgeInsets.all(10),
+                        child: Text(
+                          'Economics',
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
+                  Container(
+                    width: 109,
+                    height: 166,
+                    margin: EdgeInsets.all(10),
+                    decoration: BoxDecoration(
+                        image: DecorationImage(
+                            image: AssetImage("assets/images/Crypto.png"),
+                            fit: BoxFit.cover),
+                        borderRadius: BorderRadius.circular(25),
+                        color: Colors.white),
+                    child: Align(
+                      alignment: Alignment.bottomLeft,
+                      child: Padding(
+                        padding: EdgeInsets.all(10),
+                        child: Text(
+                          'Crypto',
+                          style: TextStyle(
+                              fontSize: 20,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.white),
+                        ),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
