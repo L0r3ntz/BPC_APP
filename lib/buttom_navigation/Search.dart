@@ -40,7 +40,7 @@ class _SearchState extends State<Search> {
                     image: AssetImage('assets/images/Sports.jpg'),
                     fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(25),
-                color: Colors.black,
+                color: Colors.white,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -65,7 +65,7 @@ class _SearchState extends State<Search> {
                     image: AssetImage('assets/images/Arts.png'),
                     fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(25),
-                color: Colors.black,
+                color: Colors.white,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -90,7 +90,7 @@ class _SearchState extends State<Search> {
                     image: AssetImage('assets/images/Economics.png'),
                     fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(25),
-                color: Colors.black,
+                color: Colors.white,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -116,7 +116,7 @@ class _SearchState extends State<Search> {
                     image: AssetImage('assets/images/Crypto.png'),
                     fit: BoxFit.cover),
                 borderRadius: BorderRadius.circular(25),
-                color: Colors.black,
+                color: Colors.white,
               ),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,

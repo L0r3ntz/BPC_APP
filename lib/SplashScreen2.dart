@@ -171,6 +171,10 @@ class _SplashScreen2State extends State<SplashScreen2> {
                       height: 15,
                     ),
                     ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            shape: StadiumBorder(),
+                            minimumSize: Size(107, 39),
+                            backgroundColor: Colors.black),
                         onPressed: () {
                           Navigator.push(context,
                               MaterialPageRoute(builder: (context) => Login()));
